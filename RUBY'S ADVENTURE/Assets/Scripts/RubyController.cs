@@ -1,17 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
+
+    public int score = 0;
     
     public int maxHealth = 5;
+
+    public bool gameOver = false;
+
+    public Text scoreText;
     
     public GameObject projectilePrefab;
-    
+    public Text gameOverText;
+
+    public ParticleSystem RubyHealParticle;
+
+    public ParticleSystem RubyDamageParticle;
+
     public AudioClip throwSound;
     public AudioClip hitSound;
+  
     
     public int health { get { return currentHealth; }}
     int currentHealth;
@@ -24,6 +38,7 @@ public class RubyController : MonoBehaviour
     float horizontal;
     float vertical;
     
+
     Animator animator;
     Vector2 lookDirection = new Vector2(1,0);
     
@@ -32,7 +47,7 @@ public class RubyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();
+    rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         
         currentHealth = maxHealth;
@@ -64,8 +79,17 @@ public class RubyController : MonoBehaviour
             if (invincibleTimer < 0)
                 isInvincible = false;
         }
+
+        if (currentHealth == 0)
+        {
+            speed = 0.0f;
+            gameOverText.gameObject.SetActive(true);
+            gameOverText.text = "You lost! Press R to Restart!";
+            gameOver = true;
+        }
         
-        if(Input.GetKeyDown(KeyCode.C))
+
+        if (Input.GetKeyDown(KeyCode.C))
         {
             Launch();
         }
@@ -81,6 +105,20 @@ public class RubyController : MonoBehaviour
                     character.DisplayDialog();
                 }
             }
+        }
+
+        if (Input.GetKey(KeyCode.R))
+
+        {
+
+            if (gameOver == true)
+
+            {
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
+
+            }
+
         }
     }
     
@@ -102,15 +140,25 @@ public class RubyController : MonoBehaviour
             
             isInvincible = true;
             invincibleTimer = timeInvincible;
+
             
+           ParticleSystem RubyDamage = Instantiate(RubyDamageParticle, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity); 
             PlaySound(hitSound);
+              
         }
+
+          if (amount > 0)
+        {
+          ParticleSystem RubyHeal = Instantiate(RubyHealParticle, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity); 
+       }
         
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+          currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         
-        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+          UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+
     }
     
+
     void Launch()
     {
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
@@ -126,5 +174,20 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    public void ChangeScore(int scoreAmount)
+    {
+ 
+        score = score + scoreAmount;
+
+        scoreText.text = "Fixed Robots: " + score.ToString();
+
+        if (score >= 2)
+        {
+            gameOverText.gameObject.SetActive(true);
+            gameOverText.text = "You Win! Game Created by Group 23!";
+        }
+
     }
 }

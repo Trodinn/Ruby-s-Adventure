@@ -3,7 +3,15 @@ guid: 0461b0bd6c766ee45844237ed7f90c04
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - projectilePrefab: {fileID: 4088984414131490325, guid: 3a049b56fd52fdd4fb0dcc3b8f73d784,
+      type: 3}
+  - RubyHealParticle: {fileID: 4613078394191349759, guid: caf775800c3a2ac499e6216a3bc64600,
+      type: 3}
+  - RubyDamageParticle: {fileID: 3274023930316542988, guid: 2dd8817643b79044c87f6dff3258e82b,
+      type: 3}
+  - throwSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  - hitSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

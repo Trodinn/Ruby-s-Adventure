@@ -3,7 +3,7 @@ guid: 2e6ecdf01ba70e3489b17b3f6525fec2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -87,7 +88,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -171,8 +172,8 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,15 +193,15 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e920f50f7b6e6d48907840bc9de6707
-      internalID: 578080608
+      spriteID: 5d57b50dfe45ec74eb0d3dacaca37661
+      internalID: 1163186418
       vertices: []
       indices: 
       edges: []
@@ -213,15 +214,15 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7c09886fc9c6eb419bd364985b9db02
-      internalID: -2033741023
+      spriteID: 44c2c39254e8e104fb97bc45ca115d7c
+      internalID: 595041526
       vertices: []
       indices: 
       edges: []
@@ -234,15 +235,15 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0448ff486523b24fb34a596672ba361
-      internalID: -1351125828
+      spriteID: 7a4a4ca4861e8dd42ae56e7b705509f1
+      internalID: -1951537450
       vertices: []
       indices: 
       edges: []
@@ -255,15 +256,15 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 351896994b64d5c4f84eea0daf6059cd
-      internalID: -2079551502
+      spriteID: cd7a2cf3dfb74304491d7e17fd1ead80
+      internalID: -673878102
       vertices: []
       indices: 
       edges: []
@@ -276,15 +277,15 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a57c421e276641445868132ff8365550
-      internalID: -33603666
+      spriteID: 4084a09f4a61997428cd6d0edaf65d51
+      internalID: -1031218425
       vertices: []
       indices: 
       edges: []
@@ -297,15 +298,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed7f5366be58cc46a954c28b7135f4b
-      internalID: 540154569
+      spriteID: 523c3cac2e829f546bd848964edb453b
+      internalID: 795130681
       vertices: []
       indices: 
       edges: []
@@ -318,15 +319,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6b0c0c2d3f1fdb4798fad00a092672e
-      internalID: 2741246
+      spriteID: 06a91d6d0b1c36b4da7fe400227d6ee8
+      internalID: 501838395
       vertices: []
       indices: 
       edges: []
@@ -339,15 +340,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75200870da075da419e241028230271d
-      internalID: -1206134469
+      spriteID: bb9315b78d171bf4a90932fbf7469721
+      internalID: -682974318
       vertices: []
       indices: 
       edges: []
@@ -364,14 +365,14 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       FloorBricksToGrassSquare_0: 455343690
-      FloorBricksToGrassSquare_1: 578080608
-      FloorBricksToGrassSquare_6: 540154569
-      FloorBricksToGrassSquare_4: -2079551502
-      FloorBricksToGrassSquare_5: -33603666
-      FloorBricksToGrassSquare_2: -2033741023
-      FloorBricksToGrassSquare_8: -1206134469
-      FloorBricksToGrassSquare_3: -1351125828
-      FloorBricksToGrassSquare_7: 2741246
+      FloorBricksToGrassSquare_1: 1163186418
+      FloorBricksToGrassSquare_2: 595041526
+      FloorBricksToGrassSquare_3: -1951537450
+      FloorBricksToGrassSquare_4: -673878102
+      FloorBricksToGrassSquare_5: -1031218425
+      FloorBricksToGrassSquare_6: 795130681
+      FloorBricksToGrassSquare_7: 501838395
+      FloorBricksToGrassSquare_8: -682974318
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

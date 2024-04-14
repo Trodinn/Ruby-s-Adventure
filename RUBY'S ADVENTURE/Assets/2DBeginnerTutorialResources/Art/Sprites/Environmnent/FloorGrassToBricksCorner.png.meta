@@ -3,7 +3,7 @@ guid: df0b6f9e93b65bc4792e6cf7849c5e37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -87,7 +88,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -171,8 +172,8 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,15 +193,15 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 136ef2c86cd095d44987d8bd4cb6b5d3
-      internalID: 847539371
+      spriteID: 3885df2a620d5f741ab9d5fdaa7645cd
+      internalID: 1703193750
       vertices: []
       indices: 
       edges: []
@@ -213,15 +214,15 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd7019286ed25fc41b4d0996fe9536ab
-      internalID: 1068856431
+      spriteID: 0bc20997ffae25d4594bb4200bd59c0c
+      internalID: -714009234
       vertices: []
       indices: 
       edges: []
@@ -234,15 +235,15 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7e51429279584b4eb861a5c4013958e
-      internalID: -1740076426
+      spriteID: 77242e67c030a9442baf5d8afcb2f0ff
+      internalID: 562169498
       vertices: []
       indices: 
       edges: []
@@ -255,15 +256,15 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a507116ec72b0e48b4388c0e08437c6
-      internalID: -460214681
+      spriteID: 094d1a594a1710d48aafe2332942c916
+      internalID: 993633998
       vertices: []
       indices: 
       edges: []
@@ -276,15 +277,15 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 438e94d5a404dee41bc387479395db39
-      internalID: -156955966
+      spriteID: dece20c044eae034dbc41ae607363b36
+      internalID: 1929424692
       vertices: []
       indices: 
       edges: []
@@ -297,15 +298,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 493645ba4e91792448072c7389048b80
-      internalID: 1005800588
+      spriteID: 6ff3f5afe3fccac44b2f99d542c647dc
+      internalID: -1646714304
       vertices: []
       indices: 
       edges: []
@@ -318,15 +319,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d38d401909df85649a823b4e572fc27e
-      internalID: 1825726681
+      spriteID: 9af803f01defe9447860b135b32c1ced
+      internalID: 718814316
       vertices: []
       indices: 
       edges: []
@@ -339,15 +340,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 927abb062cf18904b9e79637ce88415b
-      internalID: -856458660
+      spriteID: 92c3e1d9f0a9a364793e7639ea0da03e
+      internalID: -1245977681
       vertices: []
       indices: 
       edges: []
@@ -363,15 +364,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FloorGrassToBricksCorner_6: 1005800588
       FloorGrassToBricksCorner_0: -868093498
-      FloorGrassToBricksCorner_4: -460214681
-      FloorGrassToBricksCorner_3: -1740076426
-      FloorGrassToBricksCorner_2: 1068856431
-      FloorGrassToBricksCorner_7: 1825726681
-      FloorGrassToBricksCorner_1: 847539371
-      FloorGrassToBricksCorner_5: -156955966
-      FloorGrassToBricksCorner_8: -856458660
+      FloorGrassToBricksCorner_1: 1703193750
+      FloorGrassToBricksCorner_2: -714009234
+      FloorGrassToBricksCorner_3: 562169498
+      FloorGrassToBricksCorner_4: 993633998
+      FloorGrassToBricksCorner_5: 1929424692
+      FloorGrassToBricksCorner_6: -1646714304
+      FloorGrassToBricksCorner_7: 718814316
+      FloorGrassToBricksCorner_8: -1245977681
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
